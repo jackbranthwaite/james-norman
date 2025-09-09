@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import s from './styles.module.css';
 import gsap from 'gsap';
 import { Button } from '../button';
@@ -11,21 +11,29 @@ export const ContactBox = ({
   setIsOpen: () => void;
 }) => {
   const boxRef = useRef<HTMLDivElement | null>(null);
+  const [localState, setLocalState] = useState(false);
 
   const openBox = () => {
-    gsap.to(boxRef.current, { duration: 0.25, opacity: 1 });
+    gsap.to(boxRef.current, {
+      duration: 0.25,
+      opacity: 1,
+      onComplete: () => setLocalState(true),
+    });
   };
 
   const closeBox = () => {
     gsap.to(boxRef.current, {
       duration: 0.25,
       opacity: 0,
-      onComplete: setIsOpen,
+      onComplete: () => {
+        setIsOpen();
+      },
     });
   };
 
   useEffect(() => {
     if (isOpen) openBox();
+    else if (!isOpen && localState) closeBox();
   }, [isOpen]);
 
   return (

@@ -12,7 +12,7 @@ export const Homepage = () => {
   const openContact = () => {
     gsap.to(homeRef.current, {
       duration: 0.25,
-      opacity: 0.2,
+      opacity: 0.05,
       onComplete: () => setIsOpen(true),
     });
   };
