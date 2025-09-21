@@ -17,6 +17,7 @@ export const ContactBox = ({
     gsap.to(boxRef.current, {
       duration: 0.25,
       opacity: 1,
+      pointerEvents: 'all',
       onComplete: () => setLocalState(true),
     });
   };
@@ -25,6 +26,7 @@ export const ContactBox = ({
     gsap.to(boxRef.current, {
       duration: 0.25,
       opacity: 0,
+      pointerEvents: 'none',
       onComplete: () => {
         setIsOpen();
       },
@@ -39,12 +41,12 @@ export const ContactBox = ({
   return (
     <div className={s.contactBox} ref={boxRef}>
       <h3 className={s.name}>James Norman</h3>
-      <p className={s.phone}></p>
-      <p className={s.email}>james@jnarchitecture.co.nz</p>
+      <p className={s.phone}>&gt; 021 123 4567</p>
+      <p className={s.email}>&gt; james@jnarchitecture.co.nz</p>
       <p className={s.address}>
-        Level 2/158 Victoria Street,
+        &gt; Level 2/158 Victoria Street,
         <br />
-        Te Aro, Wellington, 6011
+        {'  Te Aro, Wellington, 6011'}
       </p>
       <Button onClick={() => closeBox()}>CLOSE</Button>
     </div>

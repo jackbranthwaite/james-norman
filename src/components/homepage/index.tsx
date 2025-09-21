@@ -37,7 +37,7 @@ export const Homepage = () => {
             className={`${s.fontChange} ${s.button}`}
             onClick={!isOpen ? () => openContact() : () => setIsOpen(false)}
           >
-            &lt;&lt;Get In Touch&gt;&gt;
+            « Get In Touch »
           </span>
         </h1>
       </div>

@@ -8,6 +8,9 @@ import Laptop from '@/assets/logos/1440.svg';
 import LaptopSmall from '@/assets/logos/1601-800.svg';
 import LaptopMedium from '@/assets/logos/1600-1024.svg';
 import LaptopLarge from '@/assets/logos/1601-1200.svg';
+import DesktopSmall from '@/assets/logos/1801-1024.svg';
+import DesktopMedium from '@/assets/logos/1801.svg';
+import DesktopLarge from '@/assets/logos/2400.svg';
 
 export const Logo = () => {
   return (
@@ -35,6 +38,15 @@ export const Logo = () => {
       </div>
       <div className={s.laptopLarge}>
         <LaptopLarge />
+      </div>
+      <div className={s.desktopSmall}>
+        <DesktopSmall />
+      </div>
+      <div className={s.desktopMedium}>
+        <DesktopMedium />
+      </div>
+      <div className={s.desktopLarge}>
+        <DesktopLarge />
       </div>
     </div>
   );

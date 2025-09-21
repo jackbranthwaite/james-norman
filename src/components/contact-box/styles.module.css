@@ -8,4 +8,8 @@
   flex-direction: column;
   gap: 1rem;
   background-color: #fff;
+  font-family: var(--font-pitch);
+  pointer-events: none;
+  font-size: 18px;
+  line-height: 100%;
 }

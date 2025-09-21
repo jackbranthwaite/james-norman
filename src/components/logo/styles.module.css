@@ -74,3 +74,28 @@
     display: block;
   }
 }
+
+.desktopSmall {
+  width: 100%;
+  height: auto;
+  display: none;
+  @media screen and (min-width: 1801px) and (max-width: 2399px) {
+    display: block;
+  }
+}
+.desktopMedium {
+  width: 100%;
+  height: auto;
+  display: none;
+  @media screen and (min-width: 1801px) and (max-width: 2399px) and (max-height: 1023px) {
+    display: block;
+  }
+}
+.desktopLarge {
+  width: 100%;
+  height: auto;
+  display: none;
+  @media screen and (min-width: 2400) {
+    display: block;
+  }
+}
