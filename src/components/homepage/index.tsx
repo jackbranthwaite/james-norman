@@ -4,6 +4,7 @@ import s from './styles.module.css';
 import { Wrapper } from '../wrapper';
 import { ContactBox } from '../contact-box';
 import gsap from 'gsap';
+import { Logo } from '../logo';
 
 export const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,7 @@ export const Homepage = () => {
         </h1>
       </div>
       <ContactBox isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
+      <Logo />
     </Wrapper>
   );
 };

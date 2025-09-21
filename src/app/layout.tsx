@@ -1,5 +1,34 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import localFont from 'next/font/local';
+
+const pitch = localFont({
+  src: [
+    {
+      path: '../fonts/pitch-bold.woff2',
+      style: 'bold',
+    },
+    {
+      path: '../fonts/pitch-regular.woff2',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-pitch',
+});
+
+const signifier = localFont({
+  src: [
+    {
+      path: '../fonts/signifier-regular-italic.woff2',
+      style: 'italic',
+    },
+    {
+      path: '../fonts/signifier-regular.woff2',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-signifier',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={`${signifier.variable} ${pitch.variable}`}>
       <body>{children}</body>
     </html>
   );
