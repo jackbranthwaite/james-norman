@@ -9,3 +9,13 @@
 .button {
   cursor: pointer;
 }
+
+.contents {
+  @media screen and (min-width: 1801px) and (max-width: 2399px) {
+    width: 655px;
+  }
+
+  @media screen and (min-width: 2400px) {
+    width: 880px;
+  }
+}

@@ -3,4 +3,10 @@
   height: 100dvh;
   flex-direction: column;
   display: flex;
+  max-height: 100dvh;
+
+  @media screen and (min-width: 1801px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
