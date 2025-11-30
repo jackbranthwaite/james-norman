@@ -3,14 +3,14 @@ import s from './styles.module.css';
 import Mobile from '@/assets/logos/375.svg';
 import MobileLandscape from '@/assets/logos/440.svg';
 import SmallTablet from '@/assets/logos/744.svg';
-import LargeTablet from '@/assets/logos/1024.svg';
-import Laptop from '@/assets/logos/1440.svg';
-import LaptopSmall from '@/assets/logos/1601-800.svg';
-import LaptopMedium from '@/assets/logos/1600-1024.svg';
-import LaptopLarge from '@/assets/logos/1601-1200.svg';
-import DesktopSmall from '@/assets/logos/1801-1024.svg';
-import DesktopMedium from '@/assets/logos/1801.svg';
-import DesktopLarge from '@/assets/logos/2400.svg';
+import { AnimatedLargeTablet } from './animated-large-tablet';
+import { AnimatedLaptop } from './animated-laptop';
+import { AnimatedLaptopSmall } from './animated-laptop-small';
+import { AnimatedLaptopMedium } from './animated-laptop-medium';
+import { AnimatedLaptopLarge } from './animated-laptop-large';
+import { AnimatedDesktopSmall } from './animated-desktop-small';
+import { AnimatedDesktopMedium } from './animated-desktop-medium';
+import { AnimatedDesktopLarge } from './animated-desktop-large';
 
 export const Logo = () => {
   return (
@@ -25,28 +25,28 @@ export const Logo = () => {
         <SmallTablet />
       </div>
       <div className={s.largeTablet}>
-        <LargeTablet />
+        <AnimatedLargeTablet />
       </div>
       <div className={s.laptop}>
-        <Laptop />
+        <AnimatedLaptop />
       </div>
       <div className={s.laptopSmall}>
-        <LaptopSmall />
+        <AnimatedLaptopSmall />
       </div>
       <div className={s.laptopMedium}>
-        <LaptopMedium />
+        <AnimatedLaptopMedium />
       </div>
       <div className={s.laptopLarge}>
-        <LaptopLarge />
+        <AnimatedLaptopLarge />
       </div>
       <div className={s.desktopSmall}>
-        <DesktopSmall />
+        <AnimatedDesktopSmall />
       </div>
       <div className={s.desktopMedium}>
-        <DesktopMedium />
+        <AnimatedDesktopMedium />
       </div>
       <div className={s.desktopLarge}>
-        <DesktopLarge />
+        <AnimatedDesktopLarge />
       </div>
     </div>
   );
