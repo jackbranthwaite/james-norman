@@ -25,8 +25,8 @@ export const AnimatedLaptop = () => {
       width: 586,
       height: 224,
     },
-    sensitivity: 12,
-    clamp: 50,
+    sensitivity: 5,
+    clamp: 75,
     viewBox: { width: 1420, height: 502 },
     anchors: {
       topLeft: { x: 0, y: 0 },

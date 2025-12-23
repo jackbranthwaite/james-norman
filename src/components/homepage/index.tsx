@@ -24,15 +24,17 @@ export const Homepage = () => {
 
   return (
     <Wrapper>
-      <div className={s.homepageWrapper} ref={homeRef}>
+      <div className={s.homepageWrapper}>
         <h1 className={s.contents}>
-          <span className={s.fontChange}>James Norman Architecture</span> is a
-          Te Whanganui-a-Tara Wellington-based firm dedicated to thoughtful,
-          context-driven design in retail and mixed use commercial, public, and
-          residential spaces. After 20 years of delivering major award winning
-          projects for Aotearoa New Zealand&apos;s top architecture practices,
-          James has launched his own firm to bring his experience to clients
-          seeking distinctive bespoke approach to architecture.{' '}
+          <span className={s.contentWrapper} ref={homeRef}>
+            <span className={s.fontChange}>James Norman Architecture</span> is a
+            Te Whanganui-a-Tara Wellington-based firm dedicated to thoughtful,
+            context-driven design in residential spaces, mixed use commercial,
+            and public environments. After 20 years of delivering major award
+            winning projects for Aotearoa New Zealand&#8217;s top architecture
+            practices, James has launched his own firm to bring his experience
+            to clients seeking distinctive bespoke approach to architecture.{' '}
+          </span>
           <span
             className={`${s.fontChange} ${s.button}`}
             onClick={!isOpen ? () => openContact() : () => setIsOpen(false)}

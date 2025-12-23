@@ -21,8 +21,8 @@ export const AnimatedDesktopLarge = () => {
       bottomRight: bottomRightLineRef,
     },
     centerRect: { x: 297, y: 677.5, width: 586, height: 224 },
-    sensitivity: 12,
-    clamp: 50,
+    sensitivity: 5,
+    clamp: 75,
     margin: 2,
     viewBox: { width: 1180, height: 1579 },
     anchors: {

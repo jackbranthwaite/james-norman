@@ -27,8 +27,8 @@ export const AnimatedLargeTablet = () => {
       width: 349.588,
       height: 133.631,
     },
-    sensitivity: 12,
-    clamp: 50,
+    sensitivity: 5,
+    clamp: 75,
     viewBox: { width: 1004, height: 333 },
     anchors: {
       topLeft: { x: 0, y: 0.867676 },

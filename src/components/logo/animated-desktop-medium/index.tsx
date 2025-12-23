@@ -21,8 +21,8 @@ export const AnimatedDesktopMedium = () => {
       bottomRight: bottomRightLineRef,
     },
     centerRect: { x: 147, y: 477.5, width: 586, height: 224 },
-    sensitivity: 12,
-    clamp: 50,
+    sensitivity: 5,
+    clamp: 75,
     margin: 2,
     viewBox: { width: 880, height: 1179 },
     anchors: {

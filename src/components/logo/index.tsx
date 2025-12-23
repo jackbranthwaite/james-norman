@@ -1,8 +1,5 @@
 import React from 'react';
 import s from './styles.module.css';
-import Mobile from '@/assets/logos/375.svg';
-import MobileLandscape from '@/assets/logos/440.svg';
-import SmallTablet from '@/assets/logos/744.svg';
 import { AnimatedLargeTablet } from './animated-large-tablet';
 import { AnimatedLaptop } from './animated-laptop';
 import { AnimatedLaptopSmall } from './animated-laptop-small';
@@ -11,6 +8,9 @@ import { AnimatedLaptopLarge } from './animated-laptop-large';
 import { AnimatedDesktopSmall } from './animated-desktop-small';
 import { AnimatedDesktopMedium } from './animated-desktop-medium';
 import { AnimatedDesktopLarge } from './animated-desktop-large';
+import { SmallTablet } from './small-tablet';
+import { LandscapeMobile } from './landscape-mobile';
+import { Mobile } from './mobile';
 
 export const Logo = () => {
   return (
@@ -19,7 +19,7 @@ export const Logo = () => {
         <Mobile />
       </div>
       <div className={s.mobileLandscape}>
-        <MobileLandscape />
+        <LandscapeMobile />
       </div>
       <div className={s.smallTablet}>
         <SmallTablet />

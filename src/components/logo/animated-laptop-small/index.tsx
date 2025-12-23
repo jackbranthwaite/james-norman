@@ -21,8 +21,8 @@ export const AnimatedLaptopSmall = () => {
       bottomRight: bottomRightLineRef,
     },
     centerRect: { x: 597, y: 87.5, width: 586, height: 103 },
-    sensitivity: 12,
-    clamp: 50,
+    sensitivity: 2,
+    clamp: 100,
     margin: 2,
     viewBox: { width: 1780, height: 278 },
     anchors: {
